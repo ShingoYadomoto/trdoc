@@ -67,7 +67,8 @@ func (cli *CLI) Run(args []string) int {
 
 func (cli *CLI) parseFlags(s, t string) (*APIParams, error) {
 	var (
-		source = LanguageEn
+		// If empty, auto-detected
+		source string
 		target = LanguageJa
 	)
 
