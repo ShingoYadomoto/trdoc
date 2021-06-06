@@ -69,7 +69,7 @@ func (cli *CLI) parseFlags(s, t string) (*APIParams, error) {
 	var (
 		// If empty, auto-detected
 		source string
-		target = LanguageJa
+		target = LanguageJA
 	)
 
 	if s != "" {

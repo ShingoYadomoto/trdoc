@@ -9,19 +9,7 @@ import (
 	"time"
 )
 
-const (
-	LanguageJa string = "ja"
-	LanguageEn string = "en"
-)
-
-var (
-	langMap = map[string]bool{
-		LanguageJa: true,
-		LanguageEn: true,
-	}
-
-	translateURL = mustParseURL()
-)
+var translateURL = mustParseURL()
 
 type (
 	APIParams struct {
